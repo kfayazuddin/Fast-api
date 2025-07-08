@@ -1,6 +1,6 @@
-# GitHub MCP Server
+# GitHub Fast API
 
-This is a FastAPI-based MCP server that queries GitHub repositories related to a user-provided topic.
+A FastAPI-based app that lets users search public GitHub repositories by topic (e.g., Python, Java, ML). It fetches real-time data from the GitHub API and displays repository info like name, description, stars, language, and GitHub link.
 
 ## Setup
 1. Install dependencies:
@@ -17,7 +17,7 @@ This is a FastAPI-based MCP server that queries GitHub repositories related to a
    ```
 
 ## Usage
-- Query endpoint: `http://localhost:8000/search`
+- Query endpoint(Tried running locally): `http://localhost:8000/search`
 - Payload: 
 ### 📦 Payload
 ```json
