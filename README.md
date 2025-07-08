@@ -90,6 +90,7 @@ Let me know if you want a comparison between FastAPI and another framework (like
 ![Screenshot 2025-07-08 134854](https://github.com/user-attachments/assets/d2c51cd9-369c-4b10-bb27-d1ae86f8d2d7)
 
 ## Video
+https://drive.google.com/file/d/1sH7Ajatygf4Z5y9AjtDZ3wpFidS4Rfia/view?usp=drive_link
 
 ## Usage
 - Query endpoint(Tried running locally): `http://localhost:8000/search`
