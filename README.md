@@ -15,6 +15,11 @@ A FastAPI-based app that lets users search public GitHub repositories by topic (
    ```sh
    uvicorn main:app --reload
    ```
+   
+## FastAPI Endpoint Preview
+![Screenshot 2025-07-08 134854](https://github.com/user-attachments/assets/d2c51cd9-369c-4b10-bb27-d1ae86f8d2d7)
+
+## Video
 
 ## Usage
 - Query endpoint(Tried running locally): `http://localhost:8000/search`
