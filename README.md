@@ -41,6 +41,36 @@ Built-in support for OpenAPI and JSON Schema standards.
 Enables integration with other tools and services easily.
 Let me know if you want a comparison between FastAPI and another framework (like Flask, Express.js, etc.).
 
+# Flow of Fastapi on client request :
+                          ┌────────────────────────────┐
+                          │        Client (Browser)    │
+                          └─────────────┬──────────────┘
+                                        │ HTTP Request
+                                        ▼
+                           ┌──────────────────────────┐
+                           │        Uvicorn           │
+                           │ (ASGI web server)        │
+                           └─────────────┬────────────┘
+                                         │ ASGI interface
+                                         ▼
+                          ┌───────────────────────────┐
+                          │         FastAPI           │
+                          │  (built on Starlette)     │
+                          └─────────────┬─────────────┘
+                                        │
+                                        ▼
+                           ┌─────────────────────────┐
+                           │       Starlette         │
+                           │ (ASGI toolkit/routing)  │
+                           └────────────┬────────────┘
+                                        │
+                                        ▼
+                           ┌─────────────────────────┐
+                           │     Python Code (Your   │
+                           │    endpoints/business   │
+                           │         logic)          │
+                           └─────────────────────────┘
+
 
 ## Setup
 1. Install dependencies:
